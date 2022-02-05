@@ -1,5 +1,5 @@
-import vHeader from './header/index.js'
-import vFooter from './footer/index.js'
+import vHeader from './header.js'
+import vFooter from './footer.js'
 import vHome from './home/index.js'
 import vAbout from './about/index.js'
 
@@ -40,7 +40,6 @@ const vMain = {
 const vRoot = {
    data() {
       return {
-         title: "Little Bee Webassembly",
          routes: ["Home", "About"],
          currentRoute: "Home"
       }
@@ -59,7 +58,7 @@ const vRoot = {
    template: `
       <div class='vroot'>
          <el-container>
-            <el-header> <vheader :title="title" /> </el-header>
+            <el-header> <vheader/> </el-header>
             <el-container>
                <el-aside width="200px"> <vaside :routes="routes" @click="go"/> </el-aside>
                <el-container>

@@ -7,7 +7,7 @@ const vFooter = {
    template: `
       <div class="vfooter">
          <a :href="github" target="_blank">
-            <p id="link">GitHub</p>
+            <p class="link">GitHub</p>
          </a>
       </div>
    `

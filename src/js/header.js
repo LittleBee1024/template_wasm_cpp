@@ -1,9 +1,8 @@
 
 const vHeader = {
-   props: ['title'],
    template: `
       <div>
-         <p>{{ title }}</p>
+         <slot>Little Bee Webassembly</slot>
       </div>
    `
 }
