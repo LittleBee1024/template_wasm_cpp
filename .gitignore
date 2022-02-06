@@ -37,3 +37,4 @@ web_api.js
 build/
 *.wat
 .vscode/
+ui/wasm
