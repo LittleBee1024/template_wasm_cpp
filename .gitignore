@@ -35,3 +35,4 @@
 web_api.js
 *.wasm
 build/
+*.wat

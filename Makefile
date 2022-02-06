@@ -9,10 +9,10 @@ build:
 	cmake --build ./build --verbose
 
 serve:
-	cd ./build/output/ui && python -m SimpleHTTPServer
+	cd ./build/html && python -m SimpleHTTPServer
 
 dump:
-	wasm2wat ./build/output/wasm/web_api.wasm -o web_api.wat
+	wasm2wat ./build/html/wasm/web_api.wasm -o web_api.wat
 
 clean:
 	@rm -rf build
