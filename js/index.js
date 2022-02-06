@@ -1,7 +1,7 @@
 import vHeader from './header.js'
 import vFooter from './footer.js'
 import vHome from './home/index.js'
-import vAbout from './about/index.js'
+import vWasm from './wasm/index.js'
 
 const vAside = {
    props: ['routes'],
@@ -20,7 +20,7 @@ const vMain = {
       return {
          pages: {
             'Home': Vue.shallowRef(vHome),
-            'About': Vue.shallowRef(vAbout)
+            'Wasm': Vue.shallowRef(vWasm)
          },
          NotFoundPage: { template: '<p>Page not found</p>' }
       }
@@ -40,7 +40,7 @@ const vMain = {
 const vRoot = {
    data() {
       return {
-         routes: ["Home", "About"],
+         routes: ["Home", "Wasm"],
          currentRoute: "Home"
       }
    },
