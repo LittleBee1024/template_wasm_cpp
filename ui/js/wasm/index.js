@@ -1,4 +1,4 @@
-const vAbout = {
+const vWasm = {
    data() {
       return {
          input: '',
@@ -15,7 +15,7 @@ const vAbout = {
       }
    },
    template: `
-      <div class='vhome'>
+      <div>
          <el-row :gutter="20">
             <el-col class="grid-content bg-purple" :span="12">
                <el-input
@@ -40,4 +40,4 @@ const vAbout = {
    `
 }
 
-export default vAbout;
+export default vWasm;
