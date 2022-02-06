@@ -1,6 +1,6 @@
 CC     = em++
-CFLAGS = -g
-LFLAGS = --no-entry -g -s "EXPORTED_FUNCTIONS=['_malloc', '_free']"
+CFLAGS = -Wall -g
+LFLAGS = --no-entry -s 'EXPORTED_FUNCTIONS=['_malloc', '_free']' -g
 
 TARGET = web_api
 SRC    = $(wildcard *.cpp)

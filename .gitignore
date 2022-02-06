@@ -34,3 +34,4 @@
 # wasm
 web_api.js
 *.wasm
+build/
