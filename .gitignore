@@ -30,3 +30,7 @@
 *.exe
 *.out
 *.app
+
+# wasm
+web_api.js
+*.wasm

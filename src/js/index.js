@@ -19,8 +19,8 @@ const vMain = {
    data() {
       return {
          pages: {
-            'Home': vHome,
-            'About': vAbout
+            'Home': Vue.shallowRef(vHome),
+            'About': Vue.shallowRef(vAbout)
          },
          NotFoundPage: { template: '<p>Page not found</p>' }
       }
