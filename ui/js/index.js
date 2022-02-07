@@ -7,7 +7,7 @@ const vAside = {
    props: ['routes'],
    emits: ['click'],
    template: `
-      <el-menu>
+      <el-menu mode="horizontal">
          <template v-for="(route, i) in routes">
             <el-menu-item :index="i.toString()" @click="$emit('click', route)">{{ route }}</el-menu-item>
          </template>
@@ -56,18 +56,14 @@ const vRoot = {
       }
    },
    template: `
-      <div class='vroot'>
-         <el-container>
-            <el-header> <vheader/> </el-header>
-            <el-container>
-               <el-aside width="200px"> <vaside :routes="routes" @click="go"/> </el-aside>
-               <el-container>
-                  <el-main> <vmain :current-route="currentRoute" /> </el-main>
-                  <el-footer> <vfooter/> </el-footer>
-               </el-container>
-            </el-container>
-         </el-container>
-      </div>
+      <el-container>
+         <el-header>
+            <vaside class="menu" :routes="routes" @click="go"/>
+         </el-header>
+         <el-main>
+            <vmain :current-route="currentRoute" />
+         </el-main>
+      </el-container>
    `
 }
 
