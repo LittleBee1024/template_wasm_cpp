@@ -16,26 +16,26 @@ const vWasm = {
    },
    template: `
       <div>
-         <el-row :gutter="20">
-            <el-col class="grid-content bg-purple" :span="12">
+         <el-form label-position="top">
+            <el-form-item label="Code">
                <el-input
                   v-model="input"
-                  :rows="18"
                   type="textarea"
                   placeholder="Please input"
+                  :rows="10"
                />
-               <el-button @click="toUppercase">To Uppercase</el-button>
-               <el-button @click="clear">Clear</el-button>
-            </el-col>
-            <el-col class="grid-content bg-purple-dark" :span="12">
-               <el-input
-                  v-model="output"
-                  :rows="18"
-                  type="textarea"
-                  placeholder=""
-               />
-            </el-col>
-         </el-row>
+            </el-form-item>
+            <el-form-item id="form-button">
+               <el-button type="primary" plain @click="toUppercase">Submit</el-button>
+               <el-button type="warning" plain @click="clear">Clear</el-button>
+            </el-form-item>
+         </el-form>
+
+         <el-divider>Result</el-divider>
+
+         <div class="result">
+            <p> {{output}} </p>
+         </div>
       </div>
    `
 }
