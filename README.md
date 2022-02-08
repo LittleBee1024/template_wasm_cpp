@@ -1,5 +1,7 @@
 <h1 align="center">
-  <img alt="Logo" src=".github/logo.png" width="200">
+  <a href="https://littlebee1024.github.io/template_wasm_cpp/">
+    <img alt="Logo" src=".github/logo.png" width="200">
+  </a>
 </h1>
 
 <p align="center">
