@@ -1,4 +1,4 @@
-import vRoot from './js/index.js'
+import vRoot from './scripts/index.js'
 
 Vue.createApp({})
    .use(ElementPlus)
