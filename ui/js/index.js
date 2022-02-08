@@ -1,5 +1,3 @@
-import vHeader from './header.js'
-import vFooter from './footer.js'
 import vHome from './home/index.js'
 import vWasm from './wasm/index.js'
 
@@ -45,10 +43,8 @@ const vRoot = {
       }
    },
    components: {
-      'vheader': vHeader,
       'vmain': vMain,
       'vaside': vAside,
-      'vfooter': vFooter
    },
    methods: {
       go(route) {
