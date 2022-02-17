@@ -59,6 +59,7 @@ const vRoot = {
          <el-main>
             <vmain :current-route="currentRoute" />
          </el-main>
+         <el-footer> © 2022 Little Bee </el-footer>
       </el-container>
    `
 }
