@@ -12,6 +12,13 @@ body {
    flex-wrap      : wrap;
 }
 
+.el-footer {
+   background-color: #ffa724;
+   display        : flex;
+   align-items    : center;
+   justify-content: flex-end;
+}
+
 .el-menu {
    background-color: #ffa724;
    flex            : 1;
